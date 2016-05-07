@@ -16,7 +16,7 @@
         "mocha": true
     },
     "rules": {
-      "indent": ["error", 4],
+      "indent": ["error", 2],
       "eqeqeq": ["error", "smart"],
       "semi": ["error","always"],
       "curly": "error",
