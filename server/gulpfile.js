@@ -21,20 +21,20 @@ gulp.task('eslint', () => {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task('pre-test', function () {
+gulp.task('pre-test', () => {
   return gulp.src(sourceFiles)
-    // Covering files
+  // Covering files
     .pipe(istanbul())
-    // Force `require` to return covered files
+  // Force `require` to return covered files
     .pipe(istanbul.hookRequire());
 });
 
-gulp.task('test', ['pre-test'], function () {
+gulp.task('test', ['pre-test'], () => {
   return gulp.src(['test/**/*.js'])
     .pipe(mocha())
-    // Creating the reports after tests ran
+  // Creating the reports after tests ran
     .pipe(istanbul.writeReports())
-    // Enforce a coverage of at least 90%
+  // Enforce a coverage of at least 90%
     .pipe(istanbul.enforceThresholds({ thresholds: { global: 90 } }));
 });
 
