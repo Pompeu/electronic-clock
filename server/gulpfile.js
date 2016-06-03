@@ -39,6 +39,7 @@ gulp.task('test', ['pre-test'], () => {
 });
 
 gulp.task('watch', () => {
+  process.env.NODE_ENV = 'test';
   gulp.watch(sourceFiles, ['test', 'eslint']);
 });
 

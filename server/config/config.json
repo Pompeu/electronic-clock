@@ -1,0 +1,26 @@
+{
+  "development": {
+    "dialect":  "postgres",
+    "username": "postgres",
+    "password": null,
+    "database": "electronic_clock_dev",
+    "host":     "127.0.0.1",
+    "logging":  false
+  },
+  "test": {
+    "dialect":  "postgres",
+    "username": "postgres",
+    "password": null,
+    "database": "electronic_clock_test",
+    "host":     "127.0.0.1",
+    "logging":  false
+  },
+  "production": {
+    "dialect":  "postgres",
+    "username": "postgres",
+    "password": null,
+    "database": "electronic_clock",
+    "host":     "127.0.0.1",
+    "logging":  false
+  }
+}
