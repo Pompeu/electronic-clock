@@ -16,13 +16,15 @@
         "mocha": true
     },
     "rules": {
-      "indent": ["error", 2],
       "eqeqeq": ["error", "smart"],
+      "camelcase": ["off", {"properties": "always"}],
       "semi": ["error","always"],
       "curly": "error",
       "prefer-const": "warn",
       "no-const-assign": "error",
+      "no-console": "warn",
       "no-var": "error",
+      "padded-blocks": ["off", "always"],
       "operator-assignment": ["error", "always"],
       "no-cond-assign": ["error","always"],
       "key-spacing": [
