@@ -1,0 +1,16 @@
+<div>
+  <div layout-align="center center" layout="column">
+    <md-menu>
+      <md-button ng-click="$mdOpenMenu($event)" class="md-icon-button md-primary" aria-label="Settings">
+        <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+      </md-button>
+      <md-menu-content width="6">
+        <md-menu-item ng-repeat="item in menu.desserts">
+          <md-button ng-click="menu.open($event)"> 
+            <span md-menu-align-target="">{{item}}</span>  
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+  </div>
+</div>
