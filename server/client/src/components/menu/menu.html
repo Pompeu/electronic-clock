@@ -6,7 +6,7 @@
       </md-button>
       <md-menu-content width="6">
         <md-menu-item ng-repeat="item in menu.desserts">
-          <md-button ng-click="menu.open($event)"> 
+          <md-button ng-click="menu.open($event, item)"> 
             <span md-menu-align-target="">{{item}}</span>  
           </md-button>
         </md-menu-item>

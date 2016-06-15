@@ -4,7 +4,7 @@
   "description": "front of electronic clock",
   "main": "src/app.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --history-api-fallback --inline --progress",
+    "start": "NODE_ENV=development node_modules/.bin/webpack-dev-server --history-api-fallback --inline --progress",
     "build": "rm -rf dist && node_modules/.bin/webpack --bail --progress --profile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

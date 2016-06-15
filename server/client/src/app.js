@@ -8,7 +8,9 @@ const appInjector = [
   require('./services/ajax'),
   require('./components/tool/tool'),
   require('./components/menu/menu'),
-  require('./components/menu/login')
+  require('./components/menu/login'),
+  require('./components/menu/signin'),
+  require('./components/menu/modal')
 ]
   .map(modules => modules.name)
   .concat([ngMaterial])

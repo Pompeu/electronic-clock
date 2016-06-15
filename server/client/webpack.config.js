@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
+const env = process.env.NODE_ENV;
+
 const app = {
   entry: './src/app.js',
   output: {
@@ -43,5 +45,9 @@ const app = {
     })
   ]
 };
+
+if (env === 'development') {
+  app.plugins.splice(0,1)
+}
 
 module.exports = app;

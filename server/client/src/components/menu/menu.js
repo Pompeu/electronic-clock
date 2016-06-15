@@ -4,19 +4,19 @@ const menu = {
   controllerAs: 'menu'
 }
 
-function MenuController (LoginDialog) {
+function MenuController (Modal) {
   const menu = this;
   menu.desserts = [
     'Login',
-    'SingUp'
+    'SignIN'
   ];
 
-  menu.open = ev => {
-    LoginDialog.showDialog(ev);
+  menu.open = (ev, dessert) => {
+    Modal.showDialog(ev, dessert);
   }
 }
 
-MenuController.$inject = ['LoginDialog'];
+MenuController.$inject = ['Modal'];
 
 module.exports = angular.module('app.menu', [])
   .component('eleMenu', menu);
